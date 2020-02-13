@@ -1,6 +1,8 @@
 <?php
   require_once("quiz.php");
   $quiz = new MyQuiz\Quiz();
+
+  $answer = $quiz->
 ?>
 <!DOCTYPE html>
 <html lang="ja">
