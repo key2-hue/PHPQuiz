@@ -19,6 +19,10 @@ class Quiz {
     $_SESSION['quiz_num'] = 0;
   }
 
+  public static function currentAnswer() {
+    return $_SESSION['quiz_num'];
+  }
+
   public function manyQuiz() {
     return $this->goodQuiz[$_SESSION['quiz_num']];
   }

@@ -14,10 +14,13 @@
 </head>
 <body>
   <h2><?php echo h($answer['a']); ?></h2>
-  <?php foreach($answer['b'] as $a): ?>
-    <input type="radio" name="question" value="<?php echo $a ?>">
-    <?php echo $a ?>
-  <?php endforeach; ?>
-  <input type="submit" value="回答する">
+  <form action="answer.php" method="post">
+    <?php foreach($answer['b'] as $a): ?>
+      <input type="radio" name="question" value="<?php echo $a ?>">
+      <?php echo $a ?>
+      <input type="hidden" name="answer" value="<?php echo $answer ?>">
+    <?php endforeach; ?>
+    <input type="submit" value="回答する">
+  </form>
 </body>
 </html>
