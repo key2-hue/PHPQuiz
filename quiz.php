@@ -3,6 +3,16 @@
 namespace Myquiz;
 
 class Quiz {
+
+  public function __construct() {
+    $this->goodQuiz();
+    Good::create();
+
+    if(!isset($_SESSION['quiz_num'])) {
+      $this->firstSession();
+    }
+  }
+
   private $goodQuiz = array();
 
   public function goodQuiz() {
