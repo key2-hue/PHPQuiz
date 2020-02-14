@@ -2,8 +2,8 @@
 require_once('quiz.php');
 $question = $_POST['question'];
 $answer = $_POST['answer'];
-$currentAnswer = Quiz::currentAnswer() + 1;
-if($qusetion == $answer) {
+// $currentAnswer = Quiz::currentAnswer() + 1;
+if($question == $answer) {
   $result = "正解"; 
 } else {
   $result = "不正解";

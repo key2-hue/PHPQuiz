@@ -18,7 +18,7 @@
     <?php foreach($answer['b'] as $a): ?>
       <input type="radio" name="question" value="<?php echo $a ?>">
       <?php echo $a ?>
-      <input type="hidden" name="answer" value="<?php echo $answer ?>">
+      <input type="hidden" name="answer" value="<?php echo $answer['c'] ?>">
     <?php endforeach; ?>
     <input type="submit" value="回答する">
   </form>
