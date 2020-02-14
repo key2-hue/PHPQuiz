@@ -27,6 +27,11 @@ class Quiz {
     return $this->goodQuiz[$_SESSION['quiz_num']];
   }
 
+  public function rightAnswer() {
+    return $this->goodQuiz[$_SESSION['quiz_num']]['c'];
+
+  }
+
 
   public function someQuiz() {
     $this->goodQuiz[] = array(
